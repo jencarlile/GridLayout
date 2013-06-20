@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: whitesmoke;
+}
+
+
+/*
+ Top level CSS variables.
+ NOTE: CSS variables are an experimental technology that must be enabled via the chrome flag
+ 'Enable Experimental Webkit Features'.
+ */
+:root {
+    -webkit-var-bgColor: whitesmoke;
+    -webkit-var-searchBarColor: rgba(162, 181, 205, 0.5);
+    -webkit-var-navColor: lightslategrey;
+}
+
+
+#searchBar {
+    height: 5vh;
+    background-color: rgba(162, 181, 205, 0.5); /* icy steel blue */
+}
+
+.container {
+    width: 99.9vw;
+    height: 99.9vh;
+    display: -webkit-flex;
+    -webkit-flex-align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -webkit-flex-direction: row;
+}
+
+
+
+#workspace {
+    display: -webkit-flex;
+    -webkit-flex: 24;
+}
+
+.navChapters {
+    background-color: lightslategrey;
+    display: -webkit-flex;
+    -webkit-flex: 1;
+}
+
+
+/*
+ Pane style rules, dimension-independent.
+ */
+.pane1x1, .pane1x2, .pane1x3, .pane1x4, .pane1x5, .pane1x6,
+.pane2x1, .pane2x2, .pane2x3, .pane2x4, .pane2x5, .pane2x6,
+.pane3x1, .pane3x2, .pane3x3, .pane3x4, .pane3x5, .pane3x6,
+.pane4x1, .pane4x2, .pane4x3, .pane4x4, .pane4x5, .pane4x6,
+.pane5x1, .pane5x2, .pane5x3, .pane5x4, .pane5x5, .pane5x6,
+.pane6x1, .pane6x2, .pane6x3, .pane6x4, .pane6x5, .pane6x6 {
+    border-style: dotted;
+    border-width: 1px;
+    display: inline;
+    position: absolute;
+}
+
+
+/*
+ Rules related to showing/hiding search bar.
+ */
+.shrunken { height: 95vh; }
+.topOffset {
+    top: 5vh;
+    -webkit-transition:0.2s;
+}
+
+
+
+
+
